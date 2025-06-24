@@ -1,9 +1,9 @@
 function Produto(nome, preco, desc = 0.50)  {
     this.nome = nome
-    this,preco = preco
+    this.preco = preco
     this.desc = desc
 
-    this.precoFinal =  function() {
+    this.precoFinal = function() {
         return this.preco * (1 - this.desc) 
     }
 }
